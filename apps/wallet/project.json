@@ -15,7 +15,10 @@
         "polyfills": ["zone.js"],
         "tsConfig": "apps/wallet/tsconfig.app.json",
         "assets": ["apps/wallet/src/favicon.ico", "apps/wallet/src/assets"],
-        "styles": ["apps/wallet/src/styles.css"],
+        "styles": [
+          "apps/wallet/src/styles.css",
+          "node_modules/sweetalert2/src/sweetalert2.scss"
+        ],
         "scripts": []
       },
       "configurations": {
