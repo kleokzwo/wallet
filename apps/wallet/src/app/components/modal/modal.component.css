@@ -1,0 +1,53 @@
+.modal-body{
+    max-height: 500px;
+    /* max-width: 500px; */
+    /* min-width: 300px; */
+  }
+  .bg-gray-800-opacity{
+    background-color: #2D374850;
+  }
+  
+  pre {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  @media screen and (max-width: 768px){
+    .modal-body {
+        max-height: 400px;
+    }
+  }
+  
+  /* animation for vue transition tag */
+  
+  .fade-up-down-enter-active {
+    transition: all 0.3s ease;
+  }
+  .fade-up-down-leave-active {
+    transition: all 0.3s ease;
+  }
+  .fade-up-down-enter {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  .fade-up-down-leave-to {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  
+  .fade-enter-active{
+      -webkit-transition: opacity 2s;
+      transition: opacity .3s;
+  
+  }
+  .fade-leave-active {
+      transition: opacity .3s;
+  }
+  
+  .fade-enter,
+  .fade-leave-to{
+      opacity: 0;
+  }
+  
