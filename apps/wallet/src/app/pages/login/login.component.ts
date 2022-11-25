@@ -12,8 +12,8 @@ import exportFromJSON from 'export-from-json'
 export class LoginComponent {
     public downloadFile: SafeUrl | undefined;
     public constructor(
-        private loginConfig: LoginComponentConfig,
-        private readonly domSanitized: DomSanitizer) {}
+        private loginConfig: LoginComponentConfig
+        ) {}
 
     public alertConfirmation() {
         const text = this.loginConfig.newWallet();
@@ -23,12 +23,13 @@ export class LoginComponent {
             icon: 'success',
             showCancelButton: false,
             confirmButtonText: 'Download file',
-        }).then(() => {
-            console.log('clicked!!')
-            const data = [this.loginConfig.dummyNewWallet()]
-            const fileName = 'btc2_save_me_in_the_savety_place'
-            const exportType = 'json'
-            exportFromJSON({ data, fileName, exportType })
+        }).then((result) => {
+            if(result.isConfirmed) {
+                const data = [this.loginConfig.dummyNewWallet()]
+                const fileName = 'btc2_save_me_in_the_savety_place'
+                const exportType = 'json'
+                exportFromJSON({ data, fileName, exportType })
+            }
         });
     }
 
