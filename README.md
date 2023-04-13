@@ -18,6 +18,21 @@ this is standard Angular architecture contains
 2. pages/dashboard
 3. pages/wallet
 
+## Important: Project Implementation Moving to New Repository
+
+Hello everyone who has shown interest in our project,
+
+We wanted to let you know that we're moving the implementation of our project to a new repository. You can find the new repository at https://github.com/kleokzwo/kzwo.
+
+To access the new repository as usual, please git clone https://github.com/kleokzwo/kzwo.git. We've taken steps to make the transition as easy as possible, but if you have any questions or concerns, please feel free to reach out to us.
+
+We apologize for any inconvenience this may cause and thank you for your patience during this time. We're excited about the improvements this move will bring to our project and hope you'll continue to be a part of it.
+
+Thank you for your support and interest in our project!
+
+Best regards,
+[KZWO]
+
 ## Exp.
 ### Login or create New Wallet
 ![Login Page](https://raw.githubusercontent.com/kleokzwo/wallet/main/apps/wallet/src/assets/login.png)
